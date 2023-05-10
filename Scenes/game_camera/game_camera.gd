@@ -13,7 +13,7 @@ func _process(delta):
 	aquire_target()
 	global_position = global_position.lerp(target_position, 1.0 - exp(-delta * 10.0))
 		
-
+	
 func aquire_target():
 	var player_nodes = get_tree().get_nodes_in_group("player")
 
